@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Droomwork — Case Study | Edison Pepple</title>
+  <meta name="description" content="Product strategy research that uncovered a deeper market problem: digital hiring is constrained less by talent scarcity and more by trust friction. Case study by Edison Pepple.">
+  <meta name="keywords" content="Droomwork, Edison Pepple, Product Strategy, Talent Marketplace, Trust Friction, UX Research, Case Study">
+  <meta name="author" content="Edison Pepple">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="servemaster.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+</head>
+<body class="cs-page">
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav__logo" aria-label="Edison Pepple Home">
+      <img src="assets/images/logo-icon.png" alt="Edison Pepple Logo" class="nav__logo-icon">
+      <span class="nav__logo-text">Edison Pepple.</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="works.html" class="nav__link" id="nav-work">Work</a>
+      <a href="about.html" class="nav__link" id="nav-about">About</a>
+      <a href="https://medium.com/@peppleiyerefa" target="_blank" class="nav__link" id="nav-insights">Insights</a>
+      <a href="services.html" class="nav__link" id="nav-services">Capabilities</a>
+      <a href="#contact" class="nav__cta" id="nav-lets-talk">Let's Talk</a>
+    </div>
+
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================================
+       CASE STUDY HERO
+       ================================================================ -->
+  <section class="cs-hero" id="cs-hero">
+    <div class="container">
+      <div class="cs-hero__inner">
+
+        <!-- Breadcrumb -->
+        <nav class="cs-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html#work" class="cs-breadcrumb__link">Work</a>
+          <span class="cs-breadcrumb__sep">—</span>
+          <span class="cs-breadcrumb__current">Droomwork</span>
+        </nav>
+
+        <!-- Meta row -->
+        <div class="cs-hero__meta reveal reveal-delay-1">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Role</span>
+            <span class="cs-hero__meta-value">Product Strategy Research · Market Research · User Insight Analysis</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Industry</span>
+            <span class="cs-hero__meta-value">Future of Work / Talent Marketplace</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Timeline</span>
+            <span class="cs-hero__meta-value">Research Sprint</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="cs-hero__title reveal reveal-delay-2">Droomwork</h1>
+
+        <!-- Subtitle -->
+        <p class="cs-hero__subtitle body-lg reveal reveal-delay-3">
+          Product strategy research that uncovered a deeper market problem:<br>
+          digital hiring is constrained less by talent scarcity and more by trust friction.
+        </p>
+
+        <div class="cs-hero__divider reveal reveal-delay-3"></div>
+
+        <!-- Hero Summary -->
+        <div class="cs-hero__summary reveal reveal-delay-3">
+          <p class="cs-hero__summary-text">
+            Droomwork sought to realign its product strategy with actual market behavior.
+          </p>
+          <p class="cs-hero__summary-text">
+            Initial assumptions framed the opportunity as a talent supply problem. Research revealed a more important constraint: trust, validation, and hiring confidence are the real market bottlenecks.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 01 — THE CHALLENGE
+       ================================================================ -->
+  <section class="cs-section" id="cs-challenge">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">01</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">The Challenge</h2>
+
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Digital hiring environments often assume that connecting talent to opportunity is primarily a discovery challenge.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-1">
+            But for emerging talents, startups, and recruiters, the real friction begins earlier: Who can be trusted? How can credibility be assessed quickly? How can hiring risk be reduced without expensive or rigid vetting?
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            Droomwork needed to understand whether the opportunity was truly marketplace inefficiency — or something deeper.
+          </p>
+
+          <!-- Key Business Questions -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Key Business Questions</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Why do clients hesitate before hiring unknown talent?
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                How do emerging talents prove credibility?
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                What signals reduce uncertainty fastest?
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                What product direction best aligns with real user behavior?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 02 — RESEARCH SCOPE
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-research">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">02</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Research Scope</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            The study explored behavioral patterns across digital freelancing, sourcing, vetting, and project decision-making.
+          </p>
+
+          <!-- What We Studied -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">What We Studied</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Talent sourcing behavior
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Vetting and credibility patterns
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Client hiring criteria
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Communication behavior before project initiation
+              </li>
+            </ul>
+          </div>
+
+          <!-- Research Hypothesis -->
+          <div class="cs-hypothesis reveal reveal-delay-3">
+            <span class="label cs-pain-points__label">Research Hypothesis</span>
+            <div class="cs-hypothesis__body">
+              <p class="cs-hypothesis__assumption body-md">
+                <strong>Assumption</strong><br>
+                The market gap is not only a talent-supply problem. It is fundamentally a credibility problem.
+              </p>
+              <p class="cs-hypothesis__text body-md">
+                Clients struggle to know who to trust. Emerging talents struggle to prove readiness.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 03 — KEY INSIGHTS
+       ================================================================ -->
+  <section class="cs-section" id="cs-insights">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">03</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Key Insights</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Three recurring behavioral patterns shaped the strategic direction.
+          </p>
+
+          <!-- Insight Cards -->
+          <div class="cs-insight-grid reveal reveal-delay-2">
+
+            <article class="cs-insight-card" id="insight-01">
+              <span class="cs-insight-card__number">01</span>
+              <p class="cs-insight-card__text">
+                <strong>Trust is outsourced to referrals.</strong> Referrals repeatedly replaced formal vetting, especially among startups and non-corporate clients. When trust already exists socially, <em>decision friction reduces dramatically.</em>
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-02">
+              <span class="cs-insight-card__number">02</span>
+              <p class="cs-insight-card__text">
+                <strong>Communication is the first hiring filter.</strong> Clients evaluate responsiveness, communication clarity, and collaboration ease before technical output. <em>Hiring decisions begin with perceived ease of working together.</em>
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-03">
+              <span class="cs-insight-card__number">03</span>
+              <p class="cs-insight-card__text">
+                <strong>Proof drives decisions, not promises.</strong> Portfolio quality, experience visibility, timelines, and prior outcomes consistently shaped hiring confidence. <em>Users want visible reliability signals.</em>
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 04 — STRATEGIC SYNTHESIS
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-synthesis">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">04</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Strategic Synthesis</h2>
+
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            The research reframed Droomwork's opportunity.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-1">
+            The business was not building another generic talent marketplace. It was positioned to create a <strong>trust-native infrastructure for digital hiring.</strong>
+          </p>
+
+          <!-- Shift Block -->
+          <div class="cs-shift-block reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">What Changed</span>
+            <div class="cs-shift-block__inner">
+              <div class="cs-shift-block__from">
+                <span class="cs-shift-block__symbol">✕</span>
+                <p class="body-md">Talent marketplace</p>
+              </div>
+              <div class="cs-shift-block__arrow">→</div>
+              <div class="cs-shift-block__to">
+                <span class="cs-shift-block__symbol">✓</span>
+                <p class="body-md">Trust and validation system</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 05 — PRODUCT DIRECTION
+       ================================================================ -->
+  <section class="cs-section" id="cs-solution">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">05</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Recommended Product Direction</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Three product pillars to build a trust-native hiring ecosystem.
+          </p>
+
+          <!-- Pillars -->
+          <div class="cs-pillars reveal reveal-delay-2">
+
+            <div class="cs-pillar" id="pillar-01">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 01</span>
+                <h3 class="cs-pillar__title">Referral-Based Discovery</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Design discovery around real-world recommendation behavior. Help users discover trusted talent through visible referrals and network recommendations.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-02">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 02</span>
+                <h3 class="cs-pillar__title">Lightweight Skill Verification</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Allow users to validate readiness through simple communication, technical, and soft-skill assessments.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-03">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 03</span>
+                <h3 class="cs-pillar__title">Portable Trust Signals</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Make credibility visible and transferable across profiles — referral history, portfolio proof, collaboration records, and communication readiness.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 06 — PRODUCT EXPERIENCE
+       ================================================================ -->
+  <section class="cs-section cs-section--product" id="cs-product">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">06</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Product Experience</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            The proposed system reduces uncertainty for both sides of the hiring marketplace.
+          </p>
+
+          <!-- What We Studied -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Suggested Visuals</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Hiring flow diagram
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Trust ecosystem map
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Marketplace wireframes
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Referral system concept
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full-bleed screen gallery -->
+      <div class="cs-screens reveal reveal-delay-2">
+
+        <figure class="cs-screen" id="screen-stickynotes">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Droomwork-stickynotes-Visuals.png"
+              alt="Droomwork Stickynotes Visuals — Research and synthesis"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">01</span>
+            Research Synthesis
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-personas">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Droomwork-Persona-Visuals.jpg"
+              alt="Droomwork Persona Visuals — Understanding the target users"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">02</span>
+            User Personas
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-flows">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Droomwork-Flows-Visuals.Jpg"
+              alt="Droomwork Flows Visuals — Hiring ecosystem and user journeys"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">03</span>
+            Ecosystem Flows
+          </figcaption>
+        </figure>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 07 — EXPECTED IMPACT
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-impact">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">07</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Expected Impact</h2>
+
+          <div class="cs-impact-grid reveal reveal-delay-1">
+
+            <div class="cs-impact-card" id="impact-01">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Reduced hiring uncertainty</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-02">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Faster trust formation</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-03">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Better discovery for emerging talent</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-04">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Stronger product differentiation in crowded marketplaces</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 08 — KEY LEARNINGS
+       ================================================================ -->
+  <section class="cs-section cs-section--learnings" id="cs-learnings">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">08</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Key Learnings</h2>
+
+          <blockquote class="cs-learning-quote reveal reveal-delay-1">
+            <p>
+              Markets often disguise their real constraints.
+            </p>
+          </blockquote>
+
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            What appears to be a supply problem is sometimes a confidence problem. Product strategy becomes stronger when teams stop optimizing for assumed behavior and start designing around real decision patterns.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       LIVE PROJECT CTA
+       ================================================================ -->
+  <section class="cs-section" style="padding-top: 2rem; padding-bottom: 6rem; text-align: center;">
+    <div class="container">
+      <a href="https://droomwork.io/" target="_blank" class="contact-cta__btn" style="display: inline-flex; margin: 0 auto;">
+        View Live Project
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0.75rem; width: 16px; height: 16px;">
+          <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       NEXT PROJECT NAVIGATION
+       ================================================================ -->
+  <section class="cs-next-projects" id="cs-next">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+
+      <div class="cs-next-projects__header reveal">
+        <span class="label">Explore More Work</span>
+      </div>
+
+      <div class="cs-next-projects__grid reveal reveal-delay-1">
+
+        <a href="servemaster.html" class="cs-next-card" id="next-servemaster" aria-label="View ServeMaster case study">
+          <span class="cs-next-card__number label">01</span>
+          <h3 class="cs-next-card__title">ServeMaster</h3>
+          <p class="cs-next-card__role label">Service Design &amp; Strategic Marketing</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="cs-next-card" id="next-creek" aria-label="View Creek Project case study">
+          <span class="cs-next-card__number label">02</span>
+          <h3 class="cs-next-card__title">Creek Project</h3>
+          <p class="cs-next-card__role label">UX Research &amp; Product Design</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="cs-next-card" id="next-content-engine" aria-label="View Content Engine Framework case study">
+          <span class="cs-next-card__number label">03</span>
+          <h3 class="cs-next-card__title">Content Engine Framework</h3>
+          <p class="cs-next-card__role label">Content Strategy</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT CTA
+       ================================================================ -->
+  <section class="contact-cta" id="contact">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="contact-cta__left reveal">
+          <h2 class="contact-cta__headline">
+            Let's build<br>something<br><em>valuable.</em>
+          </h2>
+        </div>
+        <div class="contact-cta__right reveal reveal-delay-1">
+          <p class="contact-cta__subheader">
+            Have a project in mind? I bring strategic research and service design into your next initiative. Let's have a conversation about what's possible.
+          </p>
+          <a href="mailto:hello@edisonpepple.com" class="contact-cta__btn" id="cta-start-conversation">
+            Start a Conversation
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/images/logo-icon.png" alt="Edison Pepple" class="footer__logo-icon">
+          <span class="footer__brand-name">Edison Pepple</span>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" id="social-linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-facebook" aria-label="Facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-x" aria-label="X (Twitter)">X</a>
+          <a href="#" class="footer__social-link" id="social-medium" aria-label="Medium">Medium</a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Edison Pepple Iyerefa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

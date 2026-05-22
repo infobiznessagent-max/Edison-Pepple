@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Edison Pepple</title>
+  <meta name="description" content="Initiate a thoughtful strategic conversation with Edison Pepple about design led systems, research, service design, and strategic content systems.">
+  <meta name="keywords" content="Edison Pepple, Contact, Strategy, Service Design, Systems Thinking, Research, Collaboration">
+  <meta name="author" content="Edison Pepple">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+</head>
+<body>
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav__logo" aria-label="Edison Pepple Home">
+      <img src="assets/images/logo-icon.png" alt="Edison Pepple Logo" class="nav__logo-icon">
+      <span class="nav__logo-text">Edison Pepple.</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="works.html" class="nav__link" id="nav-work">Work</a>
+      <a href="about.html" class="nav__link" id="nav-about">About</a>
+      <a href="https://medium.com/@peppleiyerefa" target="_blank" class="nav__link" id="nav-insights">Insights</a>
+      <a href="services.html" class="nav__link" id="nav-services">Capabilities</a>
+      <a href="contact.html" class="nav__cta" id="nav-lets-talk">Let's Talk</a>
+    </div>
+
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================================
+       HERO SECTION
+       ================================================================ -->
+  <section class="contact-hero" id="contact-hero">
+    <div class="container">
+      <div class="contact-hero__inner">
+        <p class="label reveal">Contact</p>
+        <h1 class="contact-hero__headline heading-xl reveal reveal-delay-1">
+          Let's build<br>systems that<br>create meaningful<br><em>outcomes.</em>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT GRID & LAYOUT SECTION
+       ================================================================ -->
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <div class="section-divider"></div>
+      <div class="contact-grid">
+        
+        <!-- Left Column: Copy, Details, and WhatsApp CTA -->
+        <div class="contact-info reveal">
+          <p class="contact-info__intro body-lg">
+            Let's have a thoughtful conversation on design led systems and initiatives.
+          </p>
+          <p class="contact-info__description body-md">
+            Whether you want to map operational workflows, sharpen your product positioning, or design a scalable content engine, I integrate closely with your team on the field to uncover opportunities and build systems that compound value over time.
+          </p>
+          
+          <div class="contact-details">
+            <span class="label contact-details__label">Direct Inquiries</span>
+            <a href="mailto:hello@edisonpepple.com" class="contact-details__email body-lg">hello@edisonpepple.com</a>
+          </div>
+
+          <!-- WhatsApp Section -->
+          <div class="whatsapp-cta">
+            <span class="whatsapp-cta__tag label">Fast Track</span>
+            <h3 class="whatsapp-cta__title">Prefer a faster conversation?</h3>
+            <p class="whatsapp-cta__text body-sm">
+              Reach out directly on WhatsApp for quick inquiries.
+            </p>
+            <a href="https://wa.me/message/XVYQR2OZD66RB1" target="_blank" rel="noopener noreferrer" class="whatsapp-cta__btn" id="cta-whatsapp">
+              <span>Chat on WhatsApp</span>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Premium Minimalist Form -->
+        <div class="contact-form-wrapper reveal reveal-delay-2">
+          <!-- Multi-compatible form setup:
+               Netlify Form parsing (via data-netlify) + FormSubmit direct AJAX fallback to infobiznessagent@gmail.com
+          -->
+          <form name="contact" action="https://formsubmit.co/infobiznessagent@gmail.com" method="POST" data-netlify="true" class="premium-form" id="contactForm" novalidate>
+            <!-- Netlify Form Name -->
+            <input type="hidden" name="form-name" value="contact">
+            <!-- FormSubmit Configurations -->
+            <input type="hidden" name="_subject" value="New Inquiry from Edison Pepple Portfolio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_honey" style="display:none">
+            
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" id="fullName" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+              <span class="error-message" id="nameError" aria-live="assertive">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress" class="form-label">Email Address</label>
+              <input type="email" id="emailAddress" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email">
+              <span class="error-message" id="emailError" aria-live="assertive">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="messageText" class="form-label">Message</label>
+              <textarea id="messageText" name="message" class="form-input form-textarea" placeholder="What initiative or challenge are you working on?" rows="5" required></textarea>
+              <span class="error-message" id="messageError" aria-live="assertive">Please share some context about your project.</span>
+            </div>
+
+            <button type="submit" class="form-submit-btn" id="btnSubmit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+              <svg class="btn-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Premium Minimal Success & Error State Notifications -->
+          <div class="form-status" id="formStatus" aria-live="polite">
+            <div class="form-status__inner">
+              <div class="form-status__icon" id="formStatusIcon">✓</div>
+              <div class="form-status__content">
+                <h4 class="form-status__title heading-sm" id="formStatusTitle">Message Sent</h4>
+                <p class="form-status__text body-sm" id="formStatusText">Thank you. I have received your request and will respond within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/images/logo-icon.png" alt="Edison Pepple" class="footer__logo-icon">
+          <span class="footer__brand-name">Edison Pepple</span>
+        </div>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/pepple-iyerefa-2b3739193/" target="_blank" rel="noopener noreferrer" class="footer__social-link" id="social-linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.facebook.com/people/Edison-Pepple-Iyerefa/61589245192572/" target="_blank" rel="noopener noreferrer" class="footer__social-link" id="social-facebook" aria-label="Facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-x" aria-label="X (Twitter)">X</a>
+          <a href="https://medium.com/@peppleiyerefa" target="_blank" rel="noopener noreferrer" class="footer__social-link" id="social-medium" aria-label="Medium">Medium</a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Edison Pepple Iyerefa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    // Premium Form Interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      const inputs = form.querySelectorAll('.form-input');
+      const btnSubmit = document.getElementById('btnSubmit');
+      const formStatus = document.getElementById('formStatus');
+      const formStatusIcon = document.getElementById('formStatusIcon');
+      const formStatusTitle = document.getElementById('formStatusTitle');
+      const formStatusText = document.getElementById('formStatusText');
+
+      // Floating / premium label focus transitions
+      inputs.forEach(input => {
+        // Handle initial value
+        if (input.value.trim() !== "") {
+          input.classList.add('has-value');
+        }
+
+        input.addEventListener('focus', () => {
+          input.classList.add('focused');
+        });
+
+        input.addEventListener('blur', () => {
+          input.classList.remove('focused');
+          if (input.value.trim() !== "") {
+            input.classList.add('has-value');
+          } else {
+            input.classList.remove('has-value');
+          }
+        });
+
+        // Live error clearing
+        input.addEventListener('input', () => {
+          const errorSpan = document.getElementById(`${input.id === 'fullName' ? 'name' : input.id === 'emailAddress' ? 'email' : 'message'}Error`);
+          if (errorSpan && errorSpan.classList.contains('active')) {
+            errorSpan.classList.remove('active');
+            input.classList.remove('input-error');
+          }
+        });
+      });
+
+      // Form validation helper
+      const validateForm = () => {
+        let isValid = true;
+
+        inputs.forEach(input => {
+          let errorSpan = null;
+          let isFieldValid = true;
+
+          if (input.id === 'fullName') {
+            errorSpan = document.getElementById('nameError');
+            isFieldValid = input.value.trim() !== "";
+          } else if (input.id === 'emailAddress') {
+            errorSpan = document.getElementById('emailError');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            isFieldValid = emailRegex.test(input.value.trim());
+          } else if (input.id === 'messageText') {
+            errorSpan = document.getElementById('messageError');
+            isFieldValid = input.value.trim() !== "";
+          }
+
+          if (!isFieldValid) {
+            isValid = false;
+            input.classList.add('input-error');
+            if (errorSpan) errorSpan.classList.add('active');
+          } else {
+            input.classList.remove('input-error');
+            if (errorSpan) errorSpan.classList.remove('active');
+          }
+        });
+
+        return isValid;
+      };
+
+      // AJAX form submission with premium micro-animation states
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        if (!validateForm()) {
+          // Play a very subtle error shake feedback on the button
+          btnSubmit.classList.add('shake-error');
+          setTimeout(() => btnSubmit.classList.remove('shake-error'), 500);
+          return;
+        }
+
+        // Enter submitting state
+        form.classList.add('submitting');
+        btnSubmit.disabled = true;
+
+        // Collect form data
+        const formData = new FormData(form);
+
+        // Fetch call configured for hybrid FormSubmit / Netlify support
+        // Netlify forms automatically intercept POST requests to their current path with correct form name
+        const submissionUrl = form.getAttribute('action') || window.location.href;
+        
+        fetch(submissionUrl, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+          if (response.ok) {
+            showStatus(true, 'Message Sent', 'Thank you. I have received your request and will respond within 24 hours.');
+            form.reset();
+            inputs.forEach(input => input.classList.remove('has-value'));
+          } else {
+            throw new Error('Network error');
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          showStatus(false, 'Unable to Send', 'Something went wrong. Please try again or reach out directly via hello@edisonpepple.com.');
+        })
+        .finally(() => {
+          form.classList.remove('submitting');
+          btnSubmit.disabled = false;
+        });
+      });
+
+      const showStatus = (isSuccess, title, message) => {
+        // Design system harmonized popup
+        if (isSuccess) {
+          formStatusIcon.textContent = '✓';
+          formStatusIcon.className = 'form-status__icon form-status__icon--success';
+        } else {
+          formStatusIcon.textContent = '!';
+          formStatusIcon.className = 'form-status__icon form-status__icon--error';
+        }
+
+        formStatusTitle.textContent = title;
+        formStatusText.textContent = message;
+
+        formStatus.classList.add('active');
+
+        // Scroll smoothly to see status if needed
+        formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        // Dismiss status after 8 seconds (or user can close or submit again)
+        setTimeout(() => {
+          formStatus.classList.remove('active');
+        }, 8000);
+      };
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* ========================================================================
+   WORKS PAGE — Styles
+   Extends the base design system from styles.css
+   ======================================================================== */
+
+/* --- Active Nav Link --- */
+.nav__links .nav__link.active {
+  color: var(--color-primary-dark);
+}
+.nav__links .nav__link.active::after {
+  width: 100%;
+}
+
+/* ========================================================================
+   WORKS HERO SECTION
+   ======================================================================== */
+.works-hero {
+  padding-top: 180px;
+  padding-bottom: 80px;
+  background-color: var(--color-white);
+}
+
+.works-hero__inner {
+  max-width: 900px;
+  margin: 0;
+  text-align: left;
+}
+
+.works-hero__label {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.works-hero__headline {
+  /* Using heading-xl but tightening line-height for a cinematic feel */
+  line-height: 1.1;
+  color: var(--color-text-primary);
+}
+
+/* ========================================================================
+   WORKS LIST
+   ======================================================================== */
+.works-list {
+  background-color: var(--color-white);
+  padding-bottom: var(--section-padding);
+}
+
+/* Refinements to project blocks on the works page specifically for spaciousness */
+.works-page .project-block {
+  padding: 100px 0;
+  gap: 80px;
+}
+
+.works-page .project-block__description {
+  /* Enforce a larger body font for the strategic summaries */
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+}
+
+/* Subtle Hover Animations */
+.works-page .project-block__image {
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.works-page .project-block:hover .project-block__image {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.works-page .project-block:hover .project-block__name {
+  transform: translateX(4px);
+  transition: transform 0.4s var(--ease-out);
+}
+.works-page .project-block__name {
+  transition: transform 0.4s var(--ease-out);
+}
+
+/* ========================================================================
+   RESPONSIVE — TABLET
+   ======================================================================== */
+@media (max-width: 1024px) {
+  .works-hero {
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+  
+  .works-page .project-block {
+    padding: 60px 0;
+    gap: 40px;
+  }
+}
+
+/* ========================================================================
+   RESPONSIVE — MOBILE
+   ======================================================================== */
+@media (max-width: 768px) {
+  .works-hero {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .works-hero__headline {
+    font-size: clamp(2.25rem, 6vw, 3rem);
+  }
+
+  .works-page .project-block {
+    padding: 48px 0;
+    gap: 32px;
+  }
+}

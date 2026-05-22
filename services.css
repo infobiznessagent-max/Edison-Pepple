@@ -1,0 +1,198 @@
+/* ========================================================================
+   SERVICES PAGE — Styles
+   Extends the base design system from styles.css
+   ======================================================================== */
+
+/* ========================================================================
+   SERVICES HERO
+   ======================================================================== */
+.services-hero {
+  display: block;
+  padding-top: 72px;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.services-hero__inner {
+  padding: 160px 0 80px;
+}
+
+.services-hero__headline {
+  margin-bottom: 28px;
+}
+
+.services-hero__intro {
+  max-width: 600px;
+}
+
+/* ========================================================================
+   SERVICES LIST
+   ======================================================================== */
+.services-list {
+  padding: 0 0 var(--section-padding);
+  background-color: var(--color-white);
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 80px;
+  padding: 80px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item__header {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.service-item__number {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-accent-gold);
+  margin-bottom: 16px;
+}
+
+.service-item__title {
+  color: var(--color-primary-dark);
+}
+
+.service-item__content {
+  max-width: 680px;
+}
+
+.service-item__desc-lead {
+  color: var(--color-primary-dark);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.service-item__desc {
+  margin-bottom: 40px;
+}
+
+.service-item__includes {
+  background-color: var(--color-off-white);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.service-item__includes .label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.service-item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ========================================================================
+   PROCESS SECTION
+   ======================================================================== */
+.process-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-off-white);
+}
+
+.process-section__header {
+  margin-bottom: 64px;
+}
+
+.process-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-step__title {
+  color: var(--color-primary-dark);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.process-step__desc {
+  color: var(--color-text-secondary);
+}
+
+/* ========================================================================
+   WORKED ACROSS BANNER
+   ======================================================================== */
+.worked-across {
+  padding: 80px 0;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.worked-across__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.worked-across__inner .label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.worked-across__list {
+  color: var(--color-primary-dark);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* ========================================================================
+   RESPONSIVE — TABLET
+   ======================================================================== */
+@media (max-width: 1024px) {
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 56px 0;
+  }
+
+  .service-item__header {
+    position: static;
+  }
+  
+  .process-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+/* ========================================================================
+   RESPONSIVE — MOBILE
+   ======================================================================== */
+@media (max-width: 768px) {
+  .services-hero__inner {
+    padding: 120px 0 56px;
+  }
+
+  .process-section__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .service-item__includes {
+    padding: 24px;
+  }
+  
+  .worked-across {
+    padding: 56px 0;
+  }
+}

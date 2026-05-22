@@ -1,0 +1,794 @@
+/* ================================================================
+   SERVEMASTER CASE STUDY — servemaster.css
+   Editorial layout · Emerald accents · Large whitespace
+   ================================================================ */
+
+/* ── Tokens ──────────────────────────────────────────────────── */
+:root {
+  --cs-emerald:      #059669;
+  --cs-emerald-lt:   #d1fae5;
+  --cs-emerald-mid:  #10b981;
+  --cs-ink:          #111111;
+  --cs-muted:        #6b7280;
+  --cs-tint:         #f7f7f5;
+  --cs-white:        #ffffff;
+  --cs-divider:      rgba(17, 17, 17, 0.10);
+  --cs-border:       rgba(17, 17, 17, 0.08);
+
+  --cs-space-section: 120px;
+  --cs-space-sm:      48px;
+  --cs-space-md:      72px;
+}
+
+/* ── Body override for case study ───────────────────────────── */
+.cs-page {
+  background: var(--cs-white);
+  color: var(--cs-ink);
+}
+
+/* ── Shared reveal animations ───────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1.is-visible { transition-delay: 0.10s; }
+.reveal-delay-2.is-visible { transition-delay: 0.20s; }
+.reveal-delay-3.is-visible { transition-delay: 0.30s; }
+
+/* ================================================================
+   HERO
+   ================================================================ */
+.cs-hero {
+  padding-top: 160px;
+  padding-bottom: var(--cs-space-md);
+}
+
+.cs-hero__inner {
+  max-width: 880px;
+}
+
+/* Breadcrumb */
+.cs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 56px;
+}
+.cs-breadcrumb__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cs-breadcrumb__link:hover { color: var(--cs-emerald); }
+.cs-breadcrumb__sep {
+  color: var(--cs-muted);
+  font-size: 11px;
+}
+.cs-breadcrumb__current {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cs-emerald);
+}
+
+/* Meta row */
+.cs-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.cs-hero__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cs-hero__meta-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.cs-hero__meta-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cs-ink);
+}
+.cs-hero__meta-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--cs-divider);
+}
+
+/* Hero title */
+.cs-hero__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(56px, 10vw, 112px);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--cs-ink);
+  margin: 0 0 32px;
+}
+
+/* Hero subtitle */
+.cs-hero__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--cs-muted);
+  margin: 0 0 48px;
+  max-width: 640px;
+}
+
+/* Hero divider */
+.cs-hero__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--cs-divider);
+  margin-bottom: 48px;
+}
+
+/* Hero summary */
+.cs-hero__summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 800px;
+}
+.cs-hero__summary-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .cs-hero__summary { grid-template-columns: 1fr; }
+  .cs-hero__meta { gap: 20px; }
+  .cs-hero__meta-divider { display: none; }
+}
+
+/* ================================================================
+   SECTION SHARED LAYOUT
+   ================================================================ */
+.cs-section {
+  padding: var(--cs-space-section) 0;
+}
+.cs-section--tinted {
+  background: var(--cs-tint);
+}
+.cs-section--product {
+  background: var(--cs-ink);
+  color: var(--cs-white);
+}
+.cs-section--product .cs-section__headline,
+.cs-section--product .cs-section__lead,
+.cs-section--product .cs-section__number {
+  color: var(--cs-white);
+}
+.cs-section--product .cs-section__divider {
+  background: rgba(255,255,255,0.10);
+}
+.cs-section--learnings {
+  background: var(--cs-white);
+}
+
+/* Section divider */
+.cs-section__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--cs-divider);
+  margin-bottom: 72px;
+}
+
+/* Section two-column inner */
+.cs-section__inner {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 56px;
+  align-items: start;
+}
+
+.cs-section__label-col {
+  padding-top: 8px;
+}
+
+.cs-section__number {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-emerald);
+}
+
+.cs-section__headline {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(36px, 5.5vw, 72px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--cs-ink);
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+
+.cs-section__lead {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--cs-ink);
+  margin: 0 0 24px;
+  max-width: 600px;
+}
+
+.cs-section__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #555;
+  margin: 0 0 16px;
+  max-width: 560px;
+}
+
+@media (max-width: 680px) {
+  .cs-section__inner {
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+  }
+}
+
+/* ================================================================
+   PAIN POINTS LIST
+   ================================================================ */
+.cs-pain-points {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--cs-border);
+}
+.cs-pain-points__label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+}
+.cs-pain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cs-pain-list__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--cs-ink);
+  line-height: 1.5;
+}
+.cs-pain-list__icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cs-emerald);
+  flex-shrink: 0;
+}
+
+/* ================================================================
+   INSIGHT CARDS
+   ================================================================ */
+.cs-insight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 48px;
+}
+
+.cs-insight-card {
+  padding: 36px 0;
+  border-top: 1px solid var(--cs-border);
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 0 32px;
+  align-items: start;
+  transition: background 0.2s ease;
+}
+.cs-insight-card:last-child {
+  border-bottom: 1px solid var(--cs-border);
+}
+.cs-insight-card:hover {
+  background: rgba(5, 150, 105, 0.03);
+}
+
+.cs-insight-card__number {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--cs-emerald);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.cs-insight-card__text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--cs-ink);
+  margin: 0;
+}
+.cs-insight-card__text em {
+  font-style: normal;
+  color: var(--cs-emerald);
+  font-weight: 500;
+}
+
+/* ================================================================
+   SOLUTION PILLARS
+   ================================================================ */
+.cs-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 48px;
+}
+
+.cs-pillar {
+  padding: 40px 32px 36px;
+  background: var(--cs-white);
+  border: 1px solid var(--cs-border);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.cs-pillar:hover {
+  border-color: var(--cs-emerald);
+  transform: translateY(-4px);
+}
+.cs-pillar:hover .cs-pillar__accent {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.cs-pillar__accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cs-emerald), var(--cs-emerald-mid));
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cs-pillar__header {
+  margin-bottom: 20px;
+}
+.cs-pillar__tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-emerald);
+  display: block;
+  margin-bottom: 12px;
+}
+.cs-pillar__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--cs-ink);
+  margin: 0;
+}
+.cs-pillar__desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--cs-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cs-pillars { grid-template-columns: 1fr; gap: 12px; }
+}
+
+/* ================================================================
+   PRODUCT SCREENS (Section 04 — dark background)
+   ================================================================ */
+.cs-screens {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.cs-screen {
+  margin: 0;
+  position: relative;
+}
+
+.cs-screen__frame {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s ease;
+}
+.cs-screen__frame:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.cs-screen__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Placeholder for screens without images */
+.cs-screen__frame--placeholder {
+  background: #1e1e1e;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs-screen__placeholder-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cs-screen__caption {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.45);
+}
+.cs-screen__caption-num {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-emerald-mid);
+  font-weight: 500;
+}
+
+/* ================================================================
+   IMPACT CARDS (Section 05)
+   ================================================================ */
+.cs-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 48px;
+  background: var(--cs-border);
+  border: 1px solid var(--cs-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cs-impact-card {
+  padding: 48px 40px;
+  background: var(--cs-tint);
+  position: relative;
+  transition: background 0.2s ease;
+}
+.cs-impact-card:hover {
+  background: var(--cs-white);
+}
+.cs-impact-card:hover .cs-impact-card__accent {
+  transform: scaleY(1);
+}
+
+.cs-impact-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--cs-emerald), var(--cs-emerald-mid));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cs-impact-card__text {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--cs-ink);
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .cs-impact-grid { grid-template-columns: 1fr; }
+}
+
+/* ================================================================
+   KEY LEARNINGS (Section 06)
+   ================================================================ */
+.cs-learning-quote {
+  border-left: 3px solid var(--cs-emerald);
+  padding-left: 32px;
+  margin: 0 0 32px;
+}
+.cs-learning-quote p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(22px, 3.5vw, 40px);
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--cs-ink);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ================================================================
+   NEXT PROJECT NAVIGATION
+   ================================================================ */
+.cs-next-projects {
+  padding: var(--cs-space-section) 0;
+  background: var(--cs-white);
+}
+
+.cs-next-projects__header {
+  margin-bottom: 48px;
+}
+.cs-next-projects__header .label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+}
+
+.cs-next-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--cs-border);
+  border: 1px solid var(--cs-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cs-next-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 36px;
+  background: var(--cs-white);
+  text-decoration: none;
+  color: var(--cs-ink);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease, transform 0.25s ease;
+  group: true;
+}
+.cs-next-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cs-emerald), var(--cs-emerald-mid));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cs-next-card:hover {
+  background: var(--cs-tint);
+}
+.cs-next-card:hover::after {
+  transform: scaleX(1);
+}
+.cs-next-card:hover .cs-next-card__arrow {
+  transform: translateX(6px);
+}
+
+.cs-next-card__number {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-emerald);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cs-next-card__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--cs-ink);
+  margin: 0 0 12px;
+}
+
+.cs-next-card__role {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--cs-muted);
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.cs-next-card__arrow {
+  position: absolute;
+  bottom: 36px;
+  right: 32px;
+  color: var(--cs-ink);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+}
+.cs-next-card__arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .cs-next-projects__grid { grid-template-columns: 1fr; }
+}
+
+/* ================================================================
+   RESPONSIVE ADJUSTMENTS
+   ================================================================ */
+@media (max-width: 1024px) {
+  :root {
+    --cs-space-section: 88px;
+    --cs-space-md: 56px;
+  }
+  .cs-hero { padding-top: 128px; }
+  .cs-hero__title { font-size: clamp(48px, 9vw, 80px); }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --cs-space-section: 72px;
+  }
+  .cs-hero { padding-top: 112px; }
+  .cs-hero__title { font-size: clamp(40px, 10vw, 64px); }
+  .cs-section__inner {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  .cs-pillar { padding: 32px 24px; }
+  .cs-impact-card { padding: 36px 28px; }
+  .cs-next-card { padding: 32px 28px; }
+}
+
+@media (max-width: 480px) {
+  .cs-hero { padding-top: 96px; }
+  .cs-learning-quote { padding-left: 20px; }
+}
+
+/* ================================================================
+   DROOMWORK — HYPOTHESIS BLOCK
+   ================================================================ */
+.cs-hypothesis {
+  margin-top: 40px;
+  border-left: 2px solid rgba(0,0,0,0.15);
+  padding-left: 28px;
+}
+
+.cs-hypothesis__body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cs-hypothesis__assumption {
+  font-weight: 500;
+}
+
+/* ================================================================
+   DROOMWORK — STRATEGIC SHIFT BLOCK
+   ================================================================ */
+.cs-shift-block {
+  margin-top: 40px;
+}
+
+.cs-shift-block__inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.cs-shift-block__from,
+.cs-shift-block__to {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 28px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.cs-shift-block__from {
+  background: rgba(0,0,0,0.03);
+  color: rgba(0,0,0,0.45);
+}
+
+.cs-shift-block__to {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.cs-shift-block__symbol {
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.cs-shift-block__from .cs-shift-block__symbol { color: #c0392b; }
+.cs-shift-block__to .cs-shift-block__symbol { color: #2ecc71; }
+
+.cs-shift-block__arrow {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.3);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .cs-shift-block__inner { flex-direction: column; }
+  .cs-shift-block__arrow { transform: rotate(90deg); }
+}
+

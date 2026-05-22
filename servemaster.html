@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServeMaster — Case Study | Edison Pepple</title>
+  <meta name="description" content="A hospitality operations system built to help managers track orders, monitor inventory, and improve revenue visibility in real time. Case study by Edison Pepple.">
+  <meta name="keywords" content="ServeMaster, Edison Pepple, Service Design, Hospitality Technology, Case Study, Operations System">
+  <meta name="author" content="Edison Pepple">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="servemaster.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+</head>
+<body class="cs-page">
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav__logo" aria-label="Edison Pepple Home">
+      <img src="assets/images/logo-icon.png" alt="Edison Pepple Logo" class="nav__logo-icon">
+      <span class="nav__logo-text">Edison Pepple.</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="works.html" class="nav__link" id="nav-work">Work</a>
+      <a href="about.html" class="nav__link" id="nav-about">About</a>
+      <a href="https://medium.com/@peppleiyerefa" target="_blank" class="nav__link" id="nav-insights">Insights</a>
+      <a href="services.html" class="nav__link" id="nav-services">Capabilities</a>
+      <a href="#contact" class="nav__cta" id="nav-lets-talk">Let's Talk</a>
+    </div>
+
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================================
+       CASE STUDY HERO
+       ================================================================ -->
+  <section class="cs-hero" id="cs-hero">
+    <div class="container">
+      <div class="cs-hero__inner">
+
+        <!-- Breadcrumb -->
+        <nav class="cs-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html#work" class="cs-breadcrumb__link">Work</a>
+          <span class="cs-breadcrumb__sep">—</span>
+          <span class="cs-breadcrumb__current">ServeMaster</span>
+        </nav>
+
+        <!-- Meta row -->
+        <div class="cs-hero__meta reveal reveal-delay-1">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Industry</span>
+            <span class="cs-hero__meta-value">Hospitality Technology</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Timeline</span>
+            <span class="cs-hero__meta-value">4 Weeks</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Type</span>
+            <span class="cs-hero__meta-value">Service Design &amp; Strategic Marketing</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="cs-hero__title reveal reveal-delay-2">ServeMaster</h1>
+
+        <!-- Subtitle -->
+        <p class="cs-hero__subtitle body-lg reveal reveal-delay-3">
+          A hospitality operations system built to help managers track orders,<br>
+          monitor inventory, and improve revenue visibility in real time.
+        </p>
+
+        <div class="cs-hero__divider reveal reveal-delay-3"></div>
+
+        <!-- Hero summary -->
+        <div class="cs-hero__summary reveal reveal-delay-3">
+          <p class="cs-hero__summary-text">
+            Hospitality businesses often struggle with fragmented operational workflows, delayed reporting, and revenue blind spots.
+          </p>
+          <p class="cs-hero__summary-text">
+            ServeMaster was designed to centralize operational visibility for managers by connecting order tracking, inventory monitoring, and revenue intelligence into one workflow system.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 01 — THE CHALLENGE
+       ================================================================ -->
+  <section class="cs-section" id="cs-challenge">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">01</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">The Challenge</h2>
+
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Most hospitality operations still rely on fragmented manual processes.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-1">
+            Orders are collected manually. Inventory is updated inconsistently. Revenue reporting happens too late.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            This creates operational friction, reporting delays, and silent revenue leakage.
+          </p>
+
+          <!-- Pain Points -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Key Pain Points</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                No live visibility into waiter orders
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Poor stock accountability
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Delayed revenue reconciliation
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                High dependency on manual reporting
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 02 — RESEARCH INSIGHTS
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-research">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">02</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Research Insights</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Through workflow analysis and stakeholder understanding, three critical operational patterns emerged.
+          </p>
+
+          <!-- Insight Cards -->
+          <div class="cs-insight-grid reveal reveal-delay-2">
+
+            <article class="cs-insight-card" id="insight-01">
+              <span class="cs-insight-card__number">01</span>
+              <p class="cs-insight-card__text">
+                Managers don't need more reports. They need <em>live operational visibility</em> to make decisions while operations are still active.
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-02">
+              <span class="cs-insight-card__number">02</span>
+              <p class="cs-insight-card__text">
+                Revenue loss is often systemic. Operational leakages are frequently caused by <em>workflow gaps</em>, not bad staff behavior.
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-03">
+              <span class="cs-insight-card__number">03</span>
+              <p class="cs-insight-card__text">
+                Adoption depends on stress reduction. Managers adopt tools faster when systems <em>reduce daily uncertainty</em> and decision fatigue.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 03 — SOLUTION FRAMEWORK
+       ================================================================ -->
+  <section class="cs-section" id="cs-solution">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">03</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Solution Framework</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            ServeMaster was structured around three operational pillars.
+          </p>
+
+          <!-- Pillars -->
+          <div class="cs-pillars reveal reveal-delay-2">
+
+            <div class="cs-pillar" id="pillar-01">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 01</span>
+                <h3 class="cs-pillar__title">Live Order Tracking</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Managers can monitor waiter orders in real time as they are collected.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-02">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 02</span>
+                <h3 class="cs-pillar__title">Inventory Intelligence</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Track stock movement, availability, and depletion live.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-03">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 03</span>
+                <h3 class="cs-pillar__title">Revenue Dashboard</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Monitor cash sales, debt, and room charges from one dashboard.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 04 — PRODUCT EXPERIENCE (Mockup Screens)
+       ================================================================ -->
+  <section class="cs-section cs-section--product" id="cs-product">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">04</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Product Experience</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            A simple operational dashboard designed for speed, visibility, and decision support.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Full-bleed screen gallery -->
+      <div class="cs-screens reveal reveal-delay-2">
+
+        <figure class="cs-screen" id="screen-demo">
+          <div class="cs-screen__frame">
+            <video
+              src="assets/images/ServeMaster-Demo.mp4.mp4"
+              class="cs-screen__img"
+              autoplay loop muted playsinline
+            ></video>
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">01</span>
+            Product Demo
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-orders">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/ServeMaster-Orders-Dashboard.jpg.PNG"
+              alt="ServeMaster Orders dashboard — view and manage orders across all outlets"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">02</span>
+            Orders Dashboard
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-inventory">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/ServeMaster-Inventory-Dashboard.jpg.PNG"
+              alt="ServeMaster Inventory dashboard — track stock levels across all departments"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">03</span>
+            Inventory Dashboard
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-revenue">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/ServeMaster-Revenue-Analytics.jpg.PNG"
+              alt="ServeMaster Revenue analytics screen — sales and revenue analysis"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">04</span>
+            Revenue Analytics
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 05 — BUSINESS IMPACT
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-impact">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">05</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Business Impact</h2>
+
+          <div class="cs-impact-grid reveal reveal-delay-1">
+
+            <div class="cs-impact-card" id="impact-01">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Reduced reporting delays</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-02">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Improved inventory accountability</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-03">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Faster operational decisions</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-04">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Better revenue visibility</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 06 — KEY LEARNINGS
+       ================================================================ -->
+  <section class="cs-section cs-section--learnings" id="cs-learnings">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">06</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Key Learnings</h2>
+
+          <blockquote class="cs-learning-quote reveal reveal-delay-1">
+            <p>
+              Operational systems succeed when they reduce friction before introducing complexity.
+            </p>
+          </blockquote>
+
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            Managers don't adopt software because it has more features. They adopt systems that make daily decisions easier.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       LIVE PROJECT CTA
+       ================================================================ -->
+  <section class="cs-section" style="padding-top: 2rem; padding-bottom: 6rem; text-align: center;">
+    <div class="container">
+      <a href="https://serve-master.vercel.app/" target="_blank" class="contact-cta__btn" style="display: inline-flex; margin: 0 auto;">
+        View Live Project
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 0.75rem; width: 16px; height: 16px;">
+          <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       NEXT PROJECT NAVIGATION
+       ================================================================ -->
+  <section class="cs-next-projects" id="cs-next">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+
+      <div class="cs-next-projects__header reveal">
+        <span class="label">Explore More Work</span>
+      </div>
+
+      <div class="cs-next-projects__grid reveal reveal-delay-1">
+
+        <a href="#" class="cs-next-card" id="next-droomwork" aria-label="View Droomwork case study">
+          <span class="cs-next-card__number label">01</span>
+          <h3 class="cs-next-card__title">Droomwork</h3>
+          <p class="cs-next-card__role label">Product Strategy Research</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="cs-next-card" id="next-creek" aria-label="View Creek Project case study">
+          <span class="cs-next-card__number label">02</span>
+          <h3 class="cs-next-card__title">Creek Project</h3>
+          <p class="cs-next-card__role label">UX Research &amp; Product Design</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="#" class="cs-next-card" id="next-content-engine" aria-label="View Content Engine Framework case study">
+          <span class="cs-next-card__number label">03</span>
+          <h3 class="cs-next-card__title">Content Engine Framework</h3>
+          <p class="cs-next-card__role label">Content Strategy</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT CTA
+       ================================================================ -->
+  <section class="contact-cta" id="contact">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="contact-cta__left reveal">
+          <h2 class="contact-cta__headline">
+            Let's build<br>something<br><em>valuable.</em>
+          </h2>
+        </div>
+        <div class="contact-cta__right reveal reveal-delay-1">
+          <p class="contact-cta__subheader">
+            Have a project in mind? I bring strategic research and service design into your next initiative. Let's have a conversation about what's possible.
+          </p>
+          <a href="mailto:hello@edisonpepple.com" class="contact-cta__btn" id="cta-start-conversation">
+            Start a Conversation
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/images/logo-icon.png" alt="Edison Pepple" class="footer__logo-icon">
+          <span class="footer__brand-name">Edison Pepple</span>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" id="social-linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-facebook" aria-label="Facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-x" aria-label="X (Twitter)">X</a>
+          <a href="#" class="footer__social-link" id="social-medium" aria-label="Medium">Medium</a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Edison Pepple Iyerefa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

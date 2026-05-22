@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creek Project — Case Study | Edison Pepple</title>
+  <meta name="description" content="A research-led environmental platform architecture designed to align community behavior with accessible pollution tracking and actionable health guidelines. Case study by Edison Pepple.">
+  <meta name="keywords" content="Creek Project, Edison Pepple, UX Research, Product Design, Environmental Health, Case Study">
+  <meta name="author" content="Edison Pepple">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="servemaster.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+</head>
+<body class="cs-page">
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav__logo" aria-label="Edison Pepple Home">
+      <img src="assets/images/logo-icon.png" alt="Edison Pepple Logo" class="nav__logo-icon">
+      <span class="nav__logo-text">Edison Pepple.</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="works.html" class="nav__link active" id="nav-work">Work</a>
+      <a href="about.html" class="nav__link" id="nav-about">About</a>
+      <a href="https://medium.com/@peppleiyerefa" target="_blank" class="nav__link" id="nav-insights">Insights</a>
+      <a href="services.html" class="nav__link" id="nav-services">Capabilities</a>
+      <a href="#contact" class="nav__cta" id="nav-lets-talk">Let's Talk</a>
+    </div>
+
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================================
+       CASE STUDY HERO
+       ================================================================ -->
+  <section class="cs-hero" id="cs-hero">
+    <div class="container">
+      <div class="cs-hero__inner">
+
+        <!-- Breadcrumb -->
+        <nav class="cs-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html#work" class="cs-breadcrumb__link">Work</a>
+          <span class="cs-breadcrumb__sep">—</span>
+          <span class="cs-breadcrumb__current">Creek Project</span>
+        </nav>
+
+        <!-- Meta row -->
+        <div class="cs-hero__meta reveal reveal-delay-1">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Role</span>
+            <span class="cs-hero__meta-value">UX Research and Strategy · Product Design</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Industry</span>
+            <span class="cs-hero__meta-value">Climate / Environmental Health</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Timeline</span>
+            <span class="cs-hero__meta-value">3 Months</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="cs-hero__title reveal reveal-delay-2">Creek Project</h1>
+
+        <!-- Subtitle -->
+        <p class="cs-hero__subtitle body-lg reveal reveal-delay-3">
+          A research-led environmental platform architecture designed to align community behavior with accessible pollution tracking and actionable health guidelines.
+        </p>
+
+        <div class="cs-hero__divider reveal reveal-delay-3"></div>
+
+        <!-- Hero summary -->
+        <div class="cs-hero__summary reveal reveal-delay-3">
+          <p class="cs-hero__summary-text">
+            Communities in the Niger Delta face persistent environmental degradation caused by oil-related activities, black soot exposure, and unsafe waste practices.
+          </p>
+          <p class="cs-hero__summary-text">
+            Creek was designed as a digital intervention to help residents monitor environmental conditions, access health-related safety information, increase awareness around pollution exposure, and connect with recycling opportunities.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 01 — THE CHALLENGE
+       ================================================================ -->
+  <section class="cs-section" id="cs-challenge">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">01</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">The Challenge</h2>
+
+          <p class="cs-section__text body-md reveal reveal-delay-1">
+            Environmental pollution in the Niger Delta is not an abstract issue. For many residents, it directly affects:<br>
+            • respiratory health<br>
+            • water quality<br>
+            • daily living conditions<br>
+            • economic decisions
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            Research revealed a tension: People are aware of pollution risks, but economic dependency on environmentally harmful activities often outweighs long-term health concerns.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            <strong>This created a difficult design challenge:</strong> How might digital tools increase awareness and healthier decision-making in high-risk environments?
+          </p>
+
+          <!-- Core Challenges -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Core Challenges</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Black soot exposure
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Illegal refining side effects
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Weak environmental awareness systems
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                No accessible real-time air quality visibility
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Limited connection to sustainable waste systems
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 02 — DISCOVERY
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-discovery">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">02</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Discovery</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            The project began with exploratory research into environmental behaviors and community realities in the Niger Delta.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            The goal was to identify:<br>
+            • major environmental pain points<br>
+            • user motivations<br>
+            • behavioral constraints<br>
+            • feasible digital intervention opportunities
+          </p>
+
+          <!-- Methods Used -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Methods Used</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> Qualitative interviews</li>
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> Empathy mapping</li>
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> Affinity mapping</li>
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> Task analysis</li>
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> User personas</li>
+              <li class="cs-pain-list__item"><span class="cs-pain-list__icon" aria-hidden="true"></span> Usability testing</li>
+            </ul>
+          </div>
+
+          <!-- Research Goals -->
+          <div class="cs-hypothesis reveal reveal-delay-3">
+            <span class="label cs-pain-points__label">Research Goals</span>
+            <div class="cs-hypothesis__body">
+              <p class="cs-hypothesis__text body-md">
+                • Understand environmental challenges faced by residents<br>
+                • Validate high-impact opportunity areas<br>
+                • Create and test an MVP for possible deployment
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 03 — KEY INSIGHTS
+       ================================================================ -->
+  <section class="cs-section" id="cs-insights">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">03</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Key Insights</h2>
+
+          <!-- Insight Cards -->
+          <div class="cs-insight-grid reveal reveal-delay-2">
+
+            <article class="cs-insight-card">
+              <span class="cs-insight-card__number">01</span>
+              <p class="cs-insight-card__text">
+                <strong>Economic survival often overrides environmental caution.</strong><br>
+                Many participants acknowledged environmental risks but still engaged in harmful systems due to financial necessity. Short-term income frequently outweighs long-term environmental concerns.
+              </p>
+            </article>
+
+            <article class="cs-insight-card">
+              <span class="cs-insight-card__number">02</span>
+              <p class="cs-insight-card__text">
+                <strong>Awareness exists, but action infrastructure is weak.</strong><br>
+                Users understand pollution is harmful but feel powerless to influence change. Many expressed: lack of reporting channels, lack of visibility tools, and low confidence in institutional response.
+              </p>
+            </article>
+
+            <article class="cs-insight-card">
+              <span class="cs-insight-card__number">03</span>
+              <p class="cs-insight-card__text">
+                <strong>Health consequences are immediate and personal.</strong><br>
+                Participants reported coughing, respiratory discomfort, black soot exposure, and water contamination concerns. Pollution is experienced as a daily lived condition, not distant risk.
+              </p>
+            </article>
+
+            <article class="cs-insight-card">
+              <span class="cs-insight-card__number">04</span>
+              <p class="cs-insight-card__text">
+                <strong>Waste recycling has economic relevance.</strong><br>
+                Plastic waste already circulates through informal economic systems. Users were open to monetizing recyclable waste through better buyer access.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 04 — PRODUCT STRATEGY
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-strategy">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">04</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Product Strategy</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Creek was designed as a lightweight awareness and action platform.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            The product centered on five practical utility layers.
+          </p>
+
+          <!-- Pillars -->
+          <div class="cs-pillars reveal reveal-delay-2">
+
+            <div class="cs-pillar">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 01</span>
+                <h3 class="cs-pillar__title">Real-Time Air Quality Monitoring</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Users can instantly check air quality levels in their environment.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 02</span>
+                <h3 class="cs-pillar__title">Health Safety Guidance</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Receive health tips and environmental safety recommendations.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 03</span>
+                <h3 class="cs-pillar__title">Pollution Awareness Sharing</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Users can share local air quality data to social platforms to increase awareness.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 04</span>
+                <h3 class="cs-pillar__title">Health Status Checks</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Basic health guidance and environmental health support flows.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Pillar 05</span>
+                <h3 class="cs-pillar__title">Recycling Network Access</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Users can locate recyclable waste buyers directly through the platform.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 05 — USABILITY TESTING
+       ================================================================ -->
+  <section class="cs-section" id="cs-usability">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">05</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Usability Testing</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Prototype testing surfaced several interaction issues.
+          </p>
+
+          <div class="cs-shift-block reveal reveal-delay-2" style="margin-top: 2rem;">
+            <div class="cs-shift-block__inner" style="align-items: flex-start;">
+              <div class="cs-shift-block__from">
+                <span class="cs-shift-block__symbol" style="color: #666; background: #eee;">✕</span>
+                <p class="body-md">
+                  <strong>Before Testing (Users struggled with):</strong><br>
+                  • unclear CTAs<br>
+                  • weak visual hierarchy<br>
+                  • difficulty interpreting air quality information<br>
+                  • poor buyer profile readability
+                </p>
+              </div>
+              <div class="cs-shift-block__arrow" style="margin-top: 1rem;">→</div>
+              <div class="cs-shift-block__to">
+                <span class="cs-shift-block__symbol" style="color: #fff; background: var(--text-color, #1a1a1a);">✓</span>
+                <p class="body-md">
+                  <strong>After Iteration (Improved):</strong><br>
+                  • CTA visibility<br>
+                  • layout spacing<br>
+                  • information labels<br>
+                  • content comprehension<br>
+                  <em>This strengthened usability and navigation clarity.</em>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PRODUCT VISUALS GALLERY
+       ================================================================ -->
+  <section class="cs-section cs-section--product" id="cs-product">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">06</span>
+        </div>
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Product Experience</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Visualizing the environmental architecture, from affinity mapping to high-fidelity interactions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Full-bleed screen gallery -->
+      <div class="cs-screens reveal reveal-delay-2">
+
+        <figure class="cs-screen" id="screen-affinity">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Creek Project affinitymapping.jpg"
+              alt="Creek Project Affinity Mapping"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">01</span>
+            Affinity Mapping
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-taskflow">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Creek Project taskflow.jpg"
+              alt="Creek Project Task Flow"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">02</span>
+            Task Flow Architecture
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-wireframe">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Creek Project wireframe.jpg"
+              alt="Creek Project Wireframes"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">03</span>
+            Initial Wireframes
+          </figcaption>
+        </figure>
+
+        <figure class="cs-screen" id="screen-hifi">
+          <div class="cs-screen__frame">
+            <img
+              src="assets/images/Creek Project Highfidelity.jpg.png"
+              alt="Creek Project High-Fidelity Design"
+              class="cs-screen__img"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="cs-screen__caption">
+            <span class="cs-screen__caption-num label">04</span>
+            High-Fidelity Interface
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 07 — EXPECTED IMPACT
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-impact">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">07</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Expected Impact</h2>
+
+          <div class="cs-impact-grid reveal reveal-delay-1">
+
+            <div class="cs-impact-card">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Improved pollution awareness</p>
+            </div>
+
+            <div class="cs-impact-card">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Better access to environmental information</p>
+            </div>
+
+            <div class="cs-impact-card">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Health-conscious decision support</p>
+            </div>
+
+            <div class="cs-impact-card">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Improved access to recycling opportunities</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 08 — KEY LEARNINGS
+       ================================================================ -->
+  <section class="cs-section cs-section--learnings" id="cs-learnings">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">08</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Key Learnings</h2>
+
+          <blockquote class="cs-learning-quote reveal reveal-delay-1">
+            <p>
+              Designing for environmental behavior requires understanding human incentives first. Awareness alone is rarely enough.
+            </p>
+          </blockquote>
+
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            Products in high-risk communities must align with:<br>
+            • economic realities<br>
+            • daily habits<br>
+            • trust behavior<br>
+            • accessibility constraints
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            <strong>Behavior-aware design creates stronger adoption pathways.</strong>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       NEXT PROJECT NAVIGATION
+       ================================================================ -->
+  <section class="cs-next-projects" id="cs-next">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+
+      <div class="cs-next-projects__header reveal">
+        <span class="label">Explore More Work</span>
+      </div>
+
+      <div class="cs-next-projects__grid reveal reveal-delay-1">
+
+        <a href="servemaster.html" class="cs-next-card" aria-label="View ServeMaster case study">
+          <span class="cs-next-card__number label">01</span>
+          <h3 class="cs-next-card__title">ServeMaster</h3>
+          <p class="cs-next-card__role label">Service Design &amp; Strategic Marketing</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="campus-report.html" class="cs-next-card" aria-label="View Campus Report case study">
+          <span class="cs-next-card__number label">02</span>
+          <h3 class="cs-next-card__title">The Campus Report</h3>
+          <p class="cs-next-card__role label">Market Niche Research</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT CTA
+       ================================================================ -->
+  <section class="contact-cta" id="contact">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="contact-cta__left reveal">
+          <h2 class="contact-cta__headline">
+            Let's build<br>something<br><em>valuable.</em>
+          </h2>
+        </div>
+        <div class="contact-cta__right reveal reveal-delay-1">
+          <p class="contact-cta__subheader">
+            Have a project in mind? I bring strategic research and service design into your next initiative. Let's have a conversation about what's possible.
+          </p>
+          <a href="mailto:hello@edisonpepple.com" class="contact-cta__btn" id="cta-start-conversation">
+            Start a Conversation
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/images/logo-icon.png" alt="Edison Pepple" class="footer__logo-icon">
+          <span class="footer__brand-name">Edison Pepple</span>
+        </div>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/pepple-iyerefa-2b3739193/" target="_blank" class="footer__social-link" id="social-linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.facebook.com/people/Edison-Pepple-Iyerefa/61589245192572/" target="_blank" class="footer__social-link" id="social-facebook" aria-label="Facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-x" aria-label="X (Twitter)">X</a>
+          <a href="https://medium.com/@peppleiyerefa" target="_blank" class="footer__social-link" id="social-medium" aria-label="Medium">Medium</a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Edison Pepple Iyerefa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
