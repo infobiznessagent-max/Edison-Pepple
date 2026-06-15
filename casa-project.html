@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Project — Case Study | Edison Pepple</title>
+  <meta name="description" content="A modular packaging and product system that lets one food-technology brand prototype, launch and scale new SKUs across categories. Case study by Edison Pepple.">
+  <meta name="keywords" content="Casa Project, Edison Pepple, Brand Packaging, Service Prototyping, Strategy, Systems Design">
+  <meta name="author" content="Edison Pepple">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="servemaster.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+</head>
+<body class="cs-page">
+
+  <!-- ================================================================
+       NAVIGATION
+       ================================================================ -->
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav__logo" aria-label="Edison Pepple Home">
+      <img src="assets/images/logo-icon.png" alt="Edison Pepple Logo" class="nav__logo-icon">
+      <span class="nav__logo-text">Edison Pepple.</span>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="works.html" class="nav__link" id="nav-work">Work</a>
+      <a href="about.html" class="nav__link" id="nav-about">About</a>
+      <a href="https://medium.com/@peppleiyerefa" target="_blank" class="nav__link" id="nav-insights">Insights</a>
+      <a href="services.html" class="nav__link" id="nav-services">Capabilities</a>
+      <a href="contact.html" class="nav__cta" id="nav-lets-talk">Let's Talk</a>
+    </div>
+
+    <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================================
+       CASE STUDY HERO
+       ================================================================ -->
+  <section class="cs-hero" id="cs-hero">
+    <div class="container">
+      <div class="cs-hero__inner">
+
+        <!-- Breadcrumb -->
+        <nav class="cs-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html#work" class="cs-breadcrumb__link">Work</a>
+          <span class="cs-breadcrumb__sep">—</span>
+          <span class="cs-breadcrumb__current">Casa Project</span>
+        </nav>
+
+        <!-- Meta row -->
+        <div class="cs-hero__meta reveal reveal-delay-1">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Industry</span>
+            <span class="cs-hero__meta-value">Food Technology</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Timeline</span>
+            <span class="cs-hero__meta-value">Ongoing</span>
+          </div>
+          <div class="cs-hero__meta-divider"></div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label label">Type</span>
+            <span class="cs-hero__meta-value">Service Prototyping | Brand Packaging</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="cs-hero__title reveal reveal-delay-2">Casa Project</h1>
+
+        <!-- Subtitle -->
+        <p class="cs-hero__subtitle body-lg reveal reveal-delay-3">
+          A modular packaging and product system that lets one food-technology brand prototype, launch and scale new SKUs across categories — while staying instantly recognisable on a crowded shelf.
+        </p>
+
+        <div class="cs-hero__divider reveal reveal-delay-3"></div>
+
+        <!-- Hero summary -->
+        <div class="cs-hero__summary reveal reveal-delay-3">
+          <p class="cs-hero__summary-text">
+            Casa is a food-technology company moving a broad portfolio — potato chips, macaroni chips, rice and organic coconut sugar — into competitive retail. Every new flavour was being designed from scratch, so the range was growing faster than its identity could hold together.
+          </p>
+          <p class="cs-hero__summary-text">
+            I approached the pack not as artwork but as a service touchpoint — the first conversation Casa has with a shopper — and built a system that turns each new SKU into a fast, repeatable prototyping exercise instead of a redesign.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 01 — THE CHALLENGE
+       ================================================================ -->
+  <section class="cs-section" id="cs-challenge">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">01</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">The Challenge</h2>
+
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Casa was scaling faster than its packaging could keep up.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-1">
+            The portfolio already spanned several categories, but each flavour and product was commissioned on its own. On shelf, the range read like a handful of different brands rather than one.
+          </p>
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            There was no shared template, no logic linking flavour to colour, and no fast path from idea to a print-ready prototype the team could test before committing to production.
+          </p>
+
+          <!-- Pain Points -->
+          <div class="cs-pain-points reveal reveal-delay-2">
+            <span class="label cs-pain-points__label">Key Pain Points</span>
+            <ul class="cs-pain-list" role="list">
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Every SKU designed from zero — no shared template
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Weak family resemblance across flavours and categories
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Flavour confusion at shelf with no consistent colour logic
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Slow, costly path from concept to print-ready prototype
+              </li>
+              <li class="cs-pain-list__item">
+                <span class="cs-pain-list__icon" aria-hidden="true"></span>
+                Nutrition and compliance panels rebuilt for each product
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 02 — RESEARCH INSIGHTS
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-research">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">02</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Research Insights</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            Shelf observation and portfolio analysis surfaced three patterns that reframed the brief.
+          </p>
+
+          <!-- Insight Cards -->
+          <div class="cs-insight-grid reveal reveal-delay-2">
+
+            <article class="cs-insight-card" id="insight-01">
+              <span class="cs-insight-card__number">01</span>
+              <p class="cs-insight-card__text">
+                Shoppers read colour before they read words. On a busy shelf, flavour is recognised through a consistent colour system — not the flavour name.
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-02">
+              <span class="cs-insight-card__number">02</span>
+              <p class="cs-insight-card__text">
+                A portfolio is a promise. Trust transfers between products only when they visibly belong to one family.
+              </p>
+            </article>
+
+            <article class="cs-insight-card" id="insight-03">
+              <span class="cs-insight-card__number">03</span>
+              <p class="cs-insight-card__text">
+                Speed is a design problem. Casa didn't need prettier bags — it needed prototyping a new SKU to be repeatable and low-risk.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 03 — SOLUTION FRAMEWORK
+       ================================================================ -->
+  <section class="cs-section" id="cs-solution">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">03</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Solution Framework</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            The system was structured around three operating parts — designed to be reused, not redrawn.
+          </p>
+
+          <!-- Pillars -->
+          <div class="cs-pillars reveal reveal-delay-2">
+
+            <div class="cs-pillar" id="pillar-01">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Part 01</span>
+                <h3 class="cs-pillar__title">Master Pack Template</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                One fixed architecture — logo lockup, title block, flavour descriptor, motif field, product-fall zone and a compliance strip — shared by every product.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-02">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Part 02</span>
+                <h3 class="cs-pillar__title">Flavour Colour System</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Each flavour and category owns a colour token. A single rule maps flavour to palette, so the range is navigable across the whole shelf.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+            <div class="cs-pillar" id="pillar-03">
+              <div class="cs-pillar__header">
+                <span class="cs-pillar__tag label">Part 03</span>
+                <h3 class="cs-pillar__title">Prototyping Kit</h3>
+              </div>
+              <p class="cs-pillar__desc body-md">
+                Reusable components — front and back, 3D mockup and flat dieline — so a new SKU is assembled and tested in hours, not drawn from scratch.
+              </p>
+              <div class="cs-pillar__accent"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 04 — THE SYSTEM
+       ================================================================ -->
+  <section class="cs-section cs-section--product" id="cs-product">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">04</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">The System</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1">
+            A single pack architecture that flexes across flavour and category.
+          </p>
+          
+          <ul class="cs-pain-list reveal reveal-delay-2" role="list" style="margin-top: 2rem;">
+              <li class="cs-pain-list__item" style="align-items: flex-start; margin-bottom: 1rem;">
+                <strong>A. Logo lockup</strong><br>Fixed position, fixed scale — the constant that signals "this is Casa" at distance.
+              </li>
+              <li class="cs-pain-list__item" style="align-items: flex-start; margin-bottom: 1rem;">
+                <strong>B. Title & flavour block</strong><br>Same grid every time; only the flavour word and colour change.
+              </li>
+              <li class="cs-pain-list__item" style="align-items: flex-start; margin-bottom: 1rem;">
+                <strong>C. Motif field</strong><br>Halftone, sunburst or speed-lines — one texture per family, recoloured per SKU.
+              </li>
+              <li class="cs-pain-list__item" style="align-items: flex-start; margin-bottom: 1rem;">
+                <strong>D. Product-fall zone</strong><br>The appetite cue: product falling into frame, shared across the range.
+              </li>
+              <li class="cs-pain-list__item" style="align-items: flex-start;">
+                <strong>E. Compliance strip</strong><br>Reusable nutrition panel, origin mark and certifications — built once.
+              </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Feature highlights -->
+      <div class="cs-screens reveal reveal-delay-2" style="margin-top: 4rem;">
+        <div class="cs-insight-grid" style="grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+          <article class="cs-insight-card" style="background: transparent; border: 1px solid var(--color-border); box-shadow: none;">
+              <p class="label" style="margin-bottom: 0.5rem; color: var(--color-primary);">Feature 01</p>
+              <h3 class="heading-sm" style="margin-bottom: 1rem;">One template, many SKUs</h3>
+              <p class="body-sm" style="color: var(--color-text-light);">The architecture is locked so a new product slots into a proven layout instead of starting a blank canvas.</p>
+          </article>
+          <article class="cs-insight-card" style="background: transparent; border: 1px solid var(--color-border); box-shadow: none;">
+              <p class="label" style="margin-bottom: 0.5rem; color: var(--color-primary);">Feature 02</p>
+              <h3 class="heading-sm" style="margin-bottom: 1rem;">Flavour by colour</h3>
+              <p class="body-sm" style="color: var(--color-text-light);">A colour token per flavour lets shoppers find what they want by sight before they read a single word.</p>
+          </article>
+          <article class="cs-insight-card" style="background: transparent; border: 1px solid var(--color-border); box-shadow: none;">
+              <p class="label" style="margin-bottom: 0.5rem; color: var(--color-primary);">Feature 03</p>
+              <h3 class="heading-sm" style="margin-bottom: 1rem;">Cross-category consistency</h3>
+              <p class="body-sm" style="color: var(--color-text-light);">The same logic carries from chips to macaroni chips to pantry staples like rice and coconut sugar.</p>
+          </article>
+          <article class="cs-insight-card" style="background: transparent; border: 1px solid var(--color-border); box-shadow: none;">
+              <p class="label" style="margin-bottom: 0.5rem; color: var(--color-primary);">Feature 04</p>
+              <h3 class="heading-sm" style="margin-bottom: 1rem;">Compliance built in</h3>
+              <p class="body-sm" style="color: var(--color-text-light);">Nutrition, origin and certification live as shared components — never rebuilt for a new pack.</p>
+          </article>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 05 — BUSINESS IMPACT
+       ================================================================ -->
+  <section class="cs-section cs-section--tinted" id="cs-impact">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">05</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Impact</h2>
+          <p class="cs-section__lead body-lg reveal reveal-delay-1" style="margin-bottom: 2rem;">
+            The system changed how Casa operates its brand — not just how a single bag looks.
+          </p>
+
+          <div class="cs-impact-grid reveal reveal-delay-1">
+
+            <div class="cs-impact-card" id="impact-01">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">New SKUs prototyped in hours, not weeks</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-02">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">One recognisable family across every category</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-03">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Flavour found by colour, at a glance, on shelf</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-04">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Lower design and print iteration cost</p>
+            </div>
+            
+            <div class="cs-impact-card" id="impact-05">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">Compliance handled once, reused everywhere</p>
+            </div>
+
+            <div class="cs-impact-card" id="impact-06">
+              <div class="cs-impact-card__accent"></div>
+              <p class="cs-impact-card__text">A brand the team can run without redrawing it</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 06 — KEY LEARNINGS
+       ================================================================ -->
+  <section class="cs-section cs-section--learnings" id="cs-learnings">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+      <div class="cs-section__inner">
+
+        <div class="cs-section__label-col">
+          <span class="cs-section__number label">06</span>
+        </div>
+
+        <div class="cs-section__body">
+          <h2 class="cs-section__headline reveal">Reflection</h2>
+
+          <blockquote class="cs-learning-quote reveal reveal-delay-1">
+            <p>
+              "Packaging isn't the last step of a product — it's the first conversation the brand has with the shopper."
+            </p>
+          </blockquote>
+
+          <p class="cs-section__text body-md reveal reveal-delay-2">
+            By treating the pack as a service touchpoint and the design as a system, Casa stopped commissioning artwork and started operating a brand — one that can grow a SKU at a time without losing the thread that ties the whole shelf together.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       NEXT PROJECT NAVIGATION
+       ================================================================ -->
+  <section class="cs-next-projects" id="cs-next">
+    <div class="container">
+      <div class="cs-section__divider"></div>
+
+      <div class="cs-next-projects__header reveal">
+        <span class="label">Explore More Work</span>
+      </div>
+
+      <div class="cs-next-projects__grid reveal reveal-delay-1">
+
+        <a href="servemaster.html" class="cs-next-card" id="next-servemaster" aria-label="View ServeMaster case study">
+          <span class="cs-next-card__number label">01</span>
+          <h3 class="cs-next-card__title">ServeMaster</h3>
+          <p class="cs-next-card__role label">Service Design</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="droomwork.html" class="cs-next-card" id="next-droomwork" aria-label="View Droomwork case study">
+          <span class="cs-next-card__number label">02</span>
+          <h3 class="cs-next-card__title">Droomwork</h3>
+          <p class="cs-next-card__role label">Product Strategy Research</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="creek-project.html" class="cs-next-card" id="next-creek" aria-label="View Creek Project case study">
+          <span class="cs-next-card__number label">03</span>
+          <h3 class="cs-next-card__title">Creek Project</h3>
+          <p class="cs-next-card__role label">UX Research &amp; Product Design</p>
+          <span class="cs-next-card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT CTA
+       ================================================================ -->
+  <section class="contact-cta" id="contact">
+    <div class="container">
+      <div class="contact-cta__inner">
+        <div class="contact-cta__left reveal">
+          <h2 class="contact-cta__headline">
+            Let's build<br>something<br><em>valuable.</em>
+          </h2>
+        </div>
+        <div class="contact-cta__right reveal reveal-delay-1">
+          <p class="contact-cta__subheader">
+            Have a project in mind? I bring strategic research and service design into your next initiative. Let's have a conversation about what's possible.
+          </p>
+          <a href="contact.html" class="contact-cta__btn" id="cta-start-conversation">
+            Start a Conversation
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/images/logo-icon.png" alt="Edison Pepple" class="footer__logo-icon">
+          <span class="footer__brand-name">Edison Pepple</span>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" id="social-linkedin" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="footer__social-link" id="social-facebook" aria-label="Facebook">Facebook</a>
+          <a href="#" class="footer__social-link" id="social-x" aria-label="X (Twitter)">X</a>
+          <a href="#" class="footer__social-link" id="social-medium" aria-label="Medium">Medium</a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; 2026 Edison Pepple Iyerefa. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
