@@ -101,15 +101,15 @@
         <!-- Right Column: Premium Minimalist Form -->
         <div class="contact-form-wrapper reveal reveal-delay-2">
           <!-- Multi-compatible form setup:
-               Netlify Form parsing (via data-netlify) + FormSubmit direct AJAX fallback to infobiznessagent@gmail.com
+               Netlify Form parsing (via data-netlify) + Web3Forms direct AJAX fallback to infobiznessagent@gmail.com
           -->
-          <form name="contact" action="https://formsubmit.co/el/vepene" method="POST" data-netlify="true" class="premium-form" id="contactForm" novalidate>
+          <form name="contact" action="https://api.web3forms.com/submit" method="POST" data-netlify="true" class="premium-form" id="contactForm" novalidate>
             <!-- Netlify Form Name -->
             <input type="hidden" name="form-name" value="contact">
-            <!-- FormSubmit Configurations -->
-            <input type="hidden" name="_subject" value="New Inquiry from Edison Pepple Portfolio">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_honey" style="display:none">
+            <!-- Web3Forms Configurations -->
+            <input type="hidden" name="access_key" value="a66fdc52-314e-4317-9029-5197e5cbeab4">
+            <input type="hidden" name="subject" value="New Inquiry from Edison Pepple Portfolio">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
             
             <div class="form-group">
               <label for="fullName" class="form-label">Full Name</label>
