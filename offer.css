@@ -1,0 +1,770 @@
+/* ========================================================================
+   EDISON PEPPLE — Offer Page Styles
+   Business Services Packages & Pricing
+   ======================================================================== */
+
+/* ── Offer Hero ─────────────────────────────────────────────────────────── */
+.offer-hero {
+  padding-top: 72px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-hero::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(4, 108, 78, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.offer-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212, 168, 87, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.offer-hero__inner {
+  padding: 100px 0 80px;
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+}
+
+.offer-hero__label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-gold);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.offer-hero__label::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-accent-gold);
+}
+
+.offer-hero__headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  margin-bottom: 28px;
+}
+
+.offer-hero__headline em {
+  font-style: italic;
+  color: var(--color-accent-gold);
+}
+
+.offer-hero__description {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 12px;
+  max-width: 560px;
+}
+
+.offer-hero__subdescription {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  max-width: 520px;
+  font-style: italic;
+}
+
+.offer-hero__cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.offer-hero__btn {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  background-color: var(--color-accent-gold);
+  padding: 16px 36px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.offer-hero__btn:hover {
+  background-color: #e0b868;
+  transform: translateY(-1px);
+}
+
+.offer-hero__btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.offer-hero__btn:hover svg {
+  transform: translateX(3px);
+}
+
+.offer-hero__btn-note {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.02em;
+}
+
+.offer-hero__btn-note span {
+  color: var(--color-accent-gold);
+  font-weight: 600;
+}
+
+/* ── Promo Banner ───────────────────────────────────────────────────────── */
+.promo-banner {
+  background-color: var(--color-primary);
+  padding: 36px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 50%, rgba(212,168,87,0.06) 100%);
+  pointer-events: none;
+}
+
+.promo-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.promo-banner__text {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.promo-banner__text em {
+  font-style: normal;
+  color: var(--color-accent-gold);
+  font-weight: 700;
+}
+
+.promo-banner__items {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.promo-banner__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.promo-banner__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+}
+
+/* ── Section Header ─────────────────────────────────────────────────────── */
+.offer-section-header {
+  text-align: center;
+  padding: var(--section-padding) 0 64px;
+}
+
+.offer-section-header__label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 16px;
+}
+
+.offer-section-header__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  letter-spacing: -0.015em;
+}
+
+/* ── Pricing Cards ──────────────────────────────────────────────────────── */
+.pricing-section {
+  padding: 0 0 var(--section-padding);
+  background-color: var(--color-off-white);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 44px 36px 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+  border-color: var(--color-primary);
+}
+
+/* Featured card */
+.pricing-card--featured {
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+  box-shadow: 0 8px 40px rgba(4, 108, 78, 0.08);
+}
+
+.pricing-card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent-gold));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: -13px;
+  left: 36px;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 5px 16px;
+  border-radius: var(--radius-sm);
+}
+
+.pricing-card__tier {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.pricing-card__tier-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pricing-card__tier-dot--starter { background-color: #22C55E; }
+.pricing-card__tier-dot--growth { background-color: #3B82F6; }
+.pricing-card__tier-dot--pro { background-color: #A855F7; }
+
+.pricing-card__tier-name {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.pricing-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.pricing-card__subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  margin-bottom: 28px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.pricing-card__features {
+  list-style: none;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.pricing-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.pricing-card__feature:last-child {
+  border-bottom: none;
+}
+
+.pricing-card__feature-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--color-primary);
+}
+
+.pricing-card__feature--promo {
+  color: var(--color-accent-gold);
+  font-style: italic;
+}
+
+.pricing-card__feature--promo .pricing-card__feature-icon {
+  color: var(--color-accent-gold);
+}
+
+.pricing-card__footer {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.pricing-card__price {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.pricing-card__price-note {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-accent-gold);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.pricing-card__timeline {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 20px;
+}
+
+.pricing-card__btn {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-card__btn:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.pricing-card__btn svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--transition-fast);
+}
+
+.pricing-card__btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* Featured button variant */
+.pricing-card--featured .pricing-card__btn {
+  background-color: var(--color-accent-gold);
+  color: var(--color-primary-dark);
+}
+
+.pricing-card--featured .pricing-card__btn:hover {
+  background-color: #e0b868;
+}
+
+/* Pro card - custom pricing */
+.pricing-card__custom-price {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.pricing-card__custom-note {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* ── Unsure Banner ──────────────────────────────────────────────────────── */
+.unsure-banner {
+  text-align: center;
+  padding: 56px 0;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-off-white);
+}
+
+.unsure-banner__text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  line-height: 1.5;
+}
+
+.unsure-banner__link {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.unsure-banner__link:hover {
+  color: var(--color-primary-dark);
+}
+
+/* ── Add-Ons Section ────────────────────────────────────────────────────── */
+.addons-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-white);
+}
+
+.addons-section__header {
+  margin-bottom: 48px;
+}
+
+.addons-section__label {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.addons-section__label::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-text-tertiary);
+}
+
+.addons-section__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  letter-spacing: -0.01em;
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.addon-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.addon-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(4, 108, 78, 0.06);
+}
+
+.addon-card__icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.addon-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.addon-card__content {
+  flex: 1;
+}
+
+.addon-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  margin-bottom: 6px;
+}
+
+.addon-card__description {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  line-height: 1.6;
+}
+
+/* ── Final CTA Section ──────────────────────────────────────────────────── */
+.offer-cta {
+  padding: var(--section-padding) 0;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.offer-cta__inner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.offer-cta__headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.offer-cta__headline em {
+  font-style: italic;
+  color: var(--color-accent-gold);
+}
+
+.offer-cta__description {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 12px;
+}
+
+.offer-cta__subdescription {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.offer-cta__btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.offer-cta__btn {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  background-color: var(--color-accent-gold);
+  padding: 18px 44px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.offer-cta__btn:hover {
+  background-color: #e0b868;
+  transform: translateY(-2px);
+}
+
+.offer-cta__btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform var(--transition-fast);
+}
+
+.offer-cta__btn:hover svg {
+  transform: translateX(3px);
+}
+
+.offer-cta__btn-note {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.02em;
+}
+
+.offer-cta__btn-note span {
+  color: var(--color-accent-gold);
+  font-weight: 600;
+}
+
+/* ========================================================================
+   RESPONSIVE — TABLET
+   ======================================================================== */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .addons-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .promo-banner__inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .promo-banner__items {
+    justify-content: center;
+  }
+}
+
+/* ========================================================================
+   RESPONSIVE — MOBILE
+   ======================================================================== */
+@media (max-width: 768px) {
+  .offer-hero__inner {
+    padding: 72px 0 56px;
+  }
+
+  .offer-hero__headline {
+    font-size: clamp(1.875rem, 6vw, 2.5rem);
+  }
+
+  .pricing-card {
+    padding: 36px 28px 32px;
+  }
+
+  .addon-card {
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .promo-banner__items {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-hero__inner {
+    padding: 56px 0 40px;
+  }
+
+  .pricing-card {
+    padding: 28px 20px 24px;
+  }
+
+  .offer-cta__btn {
+    padding: 16px 32px;
+    font-size: 0.875rem;
+  }
+}

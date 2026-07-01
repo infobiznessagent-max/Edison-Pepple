@@ -26,6 +26,85 @@
 }
 
 /* ========================================================================
+   OFFER SHOWCASE
+   ======================================================================== */
+.services-offer {
+  padding: 0 0 80px;
+  background-color: var(--color-white);
+}
+
+.services-offer__inner {
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  padding: 64px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.services-offer__content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.services-offer__content .label {
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.services-offer__content .label::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-primary);
+}
+
+.services-offer__title {
+  margin-bottom: 24px;
+}
+
+.services-offer__desc {
+  margin-bottom: 40px;
+  color: var(--color-text-secondary);
+}
+
+.services-offer__btn {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.services-offer__btn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.services-offer__btn svg {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--transition-fast);
+}
+
+.services-offer__btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ========================================================================
    SERVICES LIST
    ======================================================================== */
 .services-list {
@@ -190,6 +269,10 @@
 
   .service-item__includes {
     padding: 24px;
+  }
+  
+  .services-offer__inner {
+    padding: 40px 24px;
   }
   
   .worked-across {
