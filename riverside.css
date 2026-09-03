@@ -1,0 +1,1002 @@
+/* ================================================================
+   RIVERSIDE MEDICAL DIAGNOSTIC LABORATORY — riverside.css
+   Editorial layout · Clinical blue & gold accents · Large whitespace
+   ================================================================ */
+
+/* ── Tokens ──────────────────────────────────────────────────── */
+:root {
+  /* Riverside brand palette — drawn from the actual brand identity */
+  --riv-blue:        #1565C0;   /* Primary brand blue */
+  --riv-blue-deep:   #0D47A1;   /* Darker blue for depth */
+  --riv-blue-mid:    #1976D2;   /* Mid blue for accents */
+  --riv-blue-lt:     #E3F2FD;   /* Light blue tint */
+  --riv-gold:        #D4A025;   /* Brand gold */
+  --riv-gold-lt:     #FFF8E1;   /* Light gold tint */
+  --riv-ink:         #111111;
+  --riv-muted:       #6b7280;
+  --riv-tint:        #f7f7f5;
+  --riv-white:       #ffffff;
+  --riv-divider:     rgba(17, 17, 17, 0.10);
+  --riv-border:      rgba(17, 17, 17, 0.08);
+
+  --cs-space-section: 120px;
+  --cs-space-sm:      48px;
+  --cs-space-md:      72px;
+}
+
+/* ── Body override for case study ───────────────────────────── */
+.cs-page {
+  background: var(--riv-white);
+  color: var(--riv-ink);
+}
+
+/* ── Shared reveal animations ───────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1.is-visible { transition-delay: 0.10s; }
+.reveal-delay-2.is-visible { transition-delay: 0.20s; }
+.reveal-delay-3.is-visible { transition-delay: 0.30s; }
+
+/* ================================================================
+   HERO
+   ================================================================ */
+.cs-hero {
+  padding-top: 160px;
+  padding-bottom: var(--cs-space-md);
+}
+
+.cs-hero__inner {
+  max-width: 880px;
+}
+
+/* Breadcrumb */
+.cs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 56px;
+}
+.cs-breadcrumb__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--riv-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cs-breadcrumb__link:hover { color: var(--riv-blue); }
+.cs-breadcrumb__sep {
+  color: var(--riv-muted);
+  font-size: 11px;
+}
+.cs-breadcrumb__current {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--riv-blue);
+}
+
+/* Meta row */
+.cs-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.cs-hero__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cs-hero__meta-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-muted);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.cs-hero__meta-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--riv-ink);
+}
+.cs-hero__meta-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--riv-divider);
+}
+
+/* Hero title */
+.cs-hero__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(56px, 10vw, 112px);
+  font-weight: 300;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  color: var(--riv-ink);
+  margin: 0 0 32px;
+}
+
+/* Hero subtitle */
+.cs-hero__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--riv-muted);
+  margin: 0 0 48px;
+  max-width: 640px;
+}
+
+/* Hero divider */
+.cs-hero__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--riv-divider);
+  margin-bottom: 48px;
+}
+
+/* Hero summary */
+.cs-hero__summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 800px;
+}
+.cs-hero__summary-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .cs-hero__summary { grid-template-columns: 1fr; }
+  .cs-hero__meta { gap: 20px; }
+  .cs-hero__meta-divider { display: none; }
+}
+
+/* ================================================================
+   HERO IMAGE — Full width opening visual
+   ================================================================ */
+.riv-hero-image {
+  padding-bottom: var(--cs-space-section);
+  padding-top: 0;
+}
+
+.riv-hero-image__frame {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0ee;
+}
+
+.riv-hero-image__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 21 / 9;
+  object-position: center 35%;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.riv-hero-image__frame:hover .riv-hero-image__img {
+  transform: scale(1.015);
+}
+
+.riv-hero-image__caption {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--riv-muted);
+}
+
+.riv-hero-image__caption-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-blue);
+  font-weight: 500;
+}
+
+/* ================================================================
+   SECTION SHARED LAYOUT
+   ================================================================ */
+.cs-section {
+  padding: var(--cs-space-section) 0;
+}
+.cs-section--tinted {
+  background: var(--riv-tint);
+}
+.cs-section--product {
+  background: var(--riv-ink);
+  color: var(--riv-white);
+}
+.cs-section--product .cs-section__headline,
+.cs-section--product .cs-section__lead,
+.cs-section--product .cs-section__number {
+  color: var(--riv-white);
+}
+.cs-section--product .cs-section__divider {
+  background: rgba(255,255,255,0.10);
+}
+.cs-section--learnings {
+  background: var(--riv-white);
+}
+
+/* Section divider */
+.cs-section__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--riv-divider);
+  margin-bottom: 72px;
+}
+
+/* Section two-column inner */
+.cs-section__inner {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 56px;
+  align-items: start;
+}
+
+.cs-section__label-col {
+  padding-top: 8px;
+}
+
+.cs-section__number {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-blue);
+}
+
+.cs-section__headline {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(36px, 5.5vw, 72px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--riv-ink);
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+
+.cs-section__lead {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--riv-ink);
+  margin: 0 0 24px;
+  max-width: 600px;
+}
+
+.cs-section__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #555;
+  margin: 0 0 16px;
+  max-width: 560px;
+}
+
+@media (max-width: 680px) {
+  .cs-section__inner {
+    grid-template-columns: 1fr;
+    gap: 24px 0;
+  }
+}
+
+/* ================================================================
+   PAIN POINTS LIST
+   ================================================================ */
+.cs-pain-points {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--riv-border);
+}
+.cs-pain-points__label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-muted);
+}
+.cs-pain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.cs-pain-list__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--riv-ink);
+  line-height: 1.5;
+}
+.cs-pain-list__icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--riv-blue);
+  flex-shrink: 0;
+}
+
+/* ================================================================
+   DISCOVERY — FINDING BLOCK
+   ================================================================ */
+.riv-finding {
+  margin-top: 48px;
+  border: 1px solid var(--riv-border);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 720px;
+}
+
+.riv-finding__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.riv-finding__left {
+  padding: 36px 32px;
+  background: var(--riv-white);
+  border-right: 1px solid var(--riv-border);
+}
+
+.riv-finding__right {
+  padding: 36px 32px;
+  background: var(--riv-blue-deep);
+  display: flex;
+  align-items: center;
+}
+
+.riv-finding__tag {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--riv-blue);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.riv-finding__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+.riv-finding__conclusion {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--riv-white);
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .riv-finding__inner { grid-template-columns: 1fr; }
+  .riv-finding__left { border-right: none; border-bottom: 1px solid var(--riv-border); }
+}
+
+/* ================================================================
+   INSIGHT CARDS
+   ================================================================ */
+.cs-insight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 48px;
+}
+
+.cs-insight-card {
+  padding: 36px 0;
+  border-top: 1px solid var(--riv-border);
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 0 32px;
+  align-items: start;
+  transition: background 0.2s ease;
+}
+.cs-insight-card:last-child {
+  border-bottom: 1px solid var(--riv-border);
+}
+.cs-insight-card:hover {
+  background: rgba(21, 101, 192, 0.03);
+}
+
+.cs-insight-card__number {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--riv-blue);
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.cs-insight-card__text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--riv-ink);
+  margin: 0;
+}
+.cs-insight-card__text em {
+  font-style: normal;
+  color: var(--riv-blue);
+  font-weight: 500;
+}
+
+/* ================================================================
+   SOLUTION PILLARS
+   ================================================================ */
+.cs-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-top: 48px;
+}
+
+/* The 5th pillar spans full width */
+.cs-pillar--wide {
+  grid-column: 1 / -1;
+}
+
+.cs-pillar {
+  padding: 40px 32px 36px;
+  background: var(--riv-white);
+  border: 1px solid var(--riv-border);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.cs-pillar:hover {
+  border-color: var(--riv-blue);
+  transform: translateY(-4px);
+}
+.cs-pillar:hover .cs-pillar__accent {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.cs-pillar__accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--riv-blue), var(--riv-gold));
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cs-pillar__header {
+  margin-bottom: 20px;
+}
+.cs-pillar__tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-blue);
+  display: block;
+  margin-bottom: 12px;
+}
+.cs-pillar__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--riv-ink);
+  margin: 0;
+}
+.cs-pillar__desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--riv-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cs-pillars { grid-template-columns: 1fr; gap: 12px; }
+  .cs-pillar--wide { grid-column: 1; }
+}
+
+/* ================================================================
+   GALLERY SECTION (Section 05 — dark background)
+   ================================================================ */
+.riv-gallery-section {
+  background: #0D1B2E;
+}
+
+.riv-gallery-divider {
+  background: rgba(255,255,255,0.10) !important;
+}
+
+.riv-gallery {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+/* Tall item — left column, spans 2 rows */
+.riv-gallery__item--tall {
+  grid-row: 1 / 3;
+}
+
+/* Right column — 2 stacked items */
+.riv-gallery__col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Wide item — second row, full span */
+.riv-gallery__item--wide {
+  grid-column: 1 / -1;
+}
+
+.riv-gallery__item {
+  margin: 0;
+  position: relative;
+}
+
+.riv-gallery__frame {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a2332;
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s ease;
+}
+.riv-gallery__frame:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.55), 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.riv-gallery__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Tall item image fills the container */
+.riv-gallery__item--tall .riv-gallery__frame {
+  height: 100%;
+}
+.riv-gallery__item--tall .riv-gallery__frame .riv-gallery__img {
+  aspect-ratio: unset;
+  min-height: 100%;
+}
+
+/* Wide item has a cinematic aspect ratio */
+.riv-gallery__item--wide .riv-gallery__img {
+  aspect-ratio: 21 / 9;
+  object-position: center 35%;
+}
+
+/* Regular items in the column */
+.riv-gallery__col .riv-gallery__img {
+  aspect-ratio: 4 / 3;
+}
+
+.riv-gallery__caption {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+}
+.riv-gallery__caption-num {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-gold);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .riv-gallery {
+    grid-template-columns: 1fr;
+  }
+  .riv-gallery__item--tall {
+    grid-row: auto;
+  }
+  .riv-gallery__item--tall .riv-gallery__frame {
+    height: auto;
+  }
+  .riv-gallery__item--tall .riv-gallery__img {
+    aspect-ratio: 3 / 2;
+  }
+  .riv-gallery__item--wide {
+    grid-column: 1;
+  }
+  .riv-gallery__item--wide .riv-gallery__img {
+    aspect-ratio: 3 / 2;
+    object-position: center;
+  }
+}
+
+/* ================================================================
+   BUSINESS IMPACT — METRICS
+   ================================================================ */
+.riv-metrics {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 48px;
+  max-width: 640px;
+  border: 1px solid var(--riv-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.riv-metric {
+  flex: 1;
+  padding: 40px 36px;
+  background: var(--riv-white);
+}
+
+.riv-metric__divider {
+  width: 1px;
+  background: var(--riv-border);
+  flex-shrink: 0;
+}
+
+.riv-metric__value {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--riv-blue);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.riv-metric__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--riv-ink);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.riv-metric__sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--riv-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 560px) {
+  .riv-metrics {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .riv-metric__divider {
+    width: 100%;
+    height: 1px;
+  }
+  .riv-metric { padding: 28px 24px; }
+}
+
+/* ================================================================
+   IMPACT CARDS (secondary outcomes)
+   ================================================================ */
+.cs-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 48px;
+  background: var(--riv-border);
+  border: 1px solid var(--riv-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.riv-impact-grid {
+  max-width: 640px;
+}
+
+.cs-impact-card {
+  padding: 40px 36px;
+  background: var(--riv-tint);
+  position: relative;
+  transition: background 0.2s ease;
+}
+.cs-impact-card:hover {
+  background: var(--riv-white);
+}
+.cs-impact-card:hover .cs-impact-card__accent {
+  transform: scaleY(1);
+}
+
+.cs-impact-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--riv-blue), var(--riv-gold));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cs-impact-card__text {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--riv-ink);
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .cs-impact-grid { grid-template-columns: 1fr; }
+}
+
+/* ================================================================
+   KEY LEARNINGS — QUOTE & LEARNING BLOCK
+   ================================================================ */
+.cs-learning-quote {
+  border-left: 3px solid var(--riv-blue);
+  padding-left: 32px;
+  margin: 0 0 32px;
+  max-width: 640px;
+}
+.cs-learning-quote p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(22px, 3.5vw, 40px);
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--riv-ink);
+  font-style: italic;
+  margin: 0;
+}
+
+.riv-learning-block {
+  margin-top: 40px;
+  padding: 32px;
+  border: 1px solid var(--riv-border);
+  border-radius: 6px;
+  max-width: 640px;
+  position: relative;
+  overflow: hidden;
+}
+
+.riv-learning-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--riv-blue), var(--riv-gold));
+}
+
+.riv-learning-block__label {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--riv-blue);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+.riv-learning-block__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #555;
+  margin: 0;
+}
+
+/* ================================================================
+   NEXT PROJECT NAVIGATION
+   ================================================================ */
+.cs-next-projects {
+  padding: var(--cs-space-section) 0;
+  background: var(--riv-white);
+}
+
+.cs-next-projects__header {
+  margin-bottom: 48px;
+}
+.cs-next-projects__header .label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-muted);
+}
+
+.cs-next-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--riv-border);
+  border: 1px solid var(--riv-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cs-next-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 36px;
+  background: var(--riv-white);
+  text-decoration: none;
+  color: var(--riv-ink);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.cs-next-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--riv-blue), var(--riv-gold));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.cs-next-card:hover {
+  background: var(--riv-tint);
+}
+.cs-next-card:hover::after {
+  transform: scaleX(1);
+}
+.cs-next-card:hover .cs-next-card__arrow {
+  transform: translateX(6px);
+}
+
+.cs-next-card__number {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--riv-blue);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cs-next-card__title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--riv-ink);
+  margin: 0 0 12px;
+}
+
+.cs-next-card__role {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--riv-muted);
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.cs-next-card__arrow {
+  position: absolute;
+  bottom: 36px;
+  right: 32px;
+  color: var(--riv-ink);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+}
+.cs-next-card__arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .cs-next-projects__grid { grid-template-columns: 1fr; }
+}
+
+/* ================================================================
+   RESPONSIVE ADJUSTMENTS
+   ================================================================ */
+@media (max-width: 1024px) {
+  :root {
+    --cs-space-section: 88px;
+    --cs-space-md: 56px;
+  }
+  .cs-hero { padding-top: 128px; }
+  .cs-hero__title { font-size: clamp(48px, 9vw, 80px); }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --cs-space-section: 72px;
+  }
+  .cs-hero { padding-top: 112px; }
+  .cs-hero__title { font-size: clamp(40px, 10vw, 64px); }
+  .cs-section__inner {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  .cs-pillar { padding: 32px 24px; }
+  .cs-impact-card { padding: 32px 24px; }
+  .cs-next-card { padding: 32px 28px; }
+  .riv-hero-image__img { aspect-ratio: 4 / 3; }
+}
+
+@media (max-width: 480px) {
+  .cs-hero { padding-top: 96px; }
+  .cs-learning-quote { padding-left: 20px; }
+  .riv-learning-block { padding: 24px 20px; }
+}
